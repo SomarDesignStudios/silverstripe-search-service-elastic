@@ -17,7 +17,7 @@
         "php": "^8.1",
         "silverstripe/framework": "^5",
         "silverstripe/silverstripe-search-service": "^3",
-        "elastic/enterprise-search": "^8.6",
+        "elastic/enterprise-search": "dev-fix-deprecated-notice-for-response",
         "guzzlehttp/guzzle": "^7"
     },
     "require-dev": {
@@ -39,5 +39,11 @@
             "silverstripe/vendor-plugin": true,
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/SomarDesignStudios/enterprise-search-php.git"
+        }
+    ]
 }
